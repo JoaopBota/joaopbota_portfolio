@@ -14,46 +14,43 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className=" bg-black px-40">
-        <section className=" bg-slate-50  min-h-screen">
+      <main className=" bg-zinc-800 px-40">
+        <section className=" bg-zinc-800  min-h-screen">
           <nav className="py-8 mb-12 flex justify-between">
-            <h1 className=" text-xl font-Varela">Portfolio</h1>
+            <h1 className=" text-xl font-Varela text-white">Portfolio</h1>
             <ul className="flex items-center">
-              <div className="text-3xl flex justify-center gap-2"> <li>
+              <div className="text-3xl flex justify-center gap-2 text-white"> <li>
                 <AiFillLinkedin />
               </li>
                 <li><AiFillGithub />
-                </li></div>
+                </li>
+                </div>
               <li>
                 <a
-                  className=" bg-gradient-to-r from-orange-200 to-orange-300 text-white px-4 py-1  rounded-xl ml-6" href="#">
+                  className=" bg-gradient-to-r from-orange-500 to-pink-600 text-white px-4 py-1  rounded-xl ml-6" href="#">
                   Resume
                 </a>
               </li>
             </ul>
           </nav>
-
           <section>
-            <div className=" relative mx-auto w-72"><Image className="rounded-full border border-gray-100 shadow-sm" src={profile_picture} /></div>
+            <div className=" relative mx-auto w-72"><Image className="rounded-full shadow-sm" src={profile_picture} /></div>
             <div className=" text-center p-8">
-              <h2 className="text-4xl py-2 font-Varela text-orange-300">João Bota</h2>
-              <h3 className="text-2xl py-2">Developer</h3>
-              <p className="text-md py-5 leading-8">
+              <h2 className="text-transparent text-6xl bg-clip-text bg-gradient-to-r from-orange-500 to-pink-600">João Bota</h2>
+              <h3 className="text-2xl py-2 font-Varela text-white">Developer</h3>
+              <p className="text-md py-3 leading-8 font-Varela text-white">
                 Software Engineer capable of developing efficient scalable
                 full-stack web-based applications, critical and problem-solving
                 skills for design and construction of software and work
                 collaboratively on software components
               </p>
             </div>
-            <div className="text-4xl flex justify-center gap-10">
-              <AiFillLinkedin />
-              <AiFillGithub />
-            </div>
           </section>
 
           <section>
-            <div>
-              <h3>Projects</h3>
+            <div className=" text-white">
+              <h3 className="text-5xl py-4">Projects</h3>
+              <p >Since the beggining of my journey as a <span className=" text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-pink-600">Software Engineer</span>, I've done many projects both for business and consumer use.</p>
             </div>
           </section>
 
