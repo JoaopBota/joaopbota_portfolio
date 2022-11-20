@@ -35,22 +35,29 @@ export default function Home() {
           </nav>
           <section>
             <div className=" relative mx-auto w-72"><Image className="rounded-full shadow-sm" src={profile_picture} /></div>
-            <div className=" text-center p-8">
+            <div className="p-8">
               <h2 className="text-transparent text-6xl bg-clip-text bg-gradient-to-r from-orange-500 to-pink-600">João Bota</h2>
-              <h3 className="text-2xl py-2 font-Varela text-white">Developer</h3>
+              <h3 className="text-2xl py-2 font-Varela text-transparent bg-clip-text bg-gradient-to-r from-white to-zinc-600">Developer</h3>
               <p className="text-md py-3 leading-8 font-Varela text-white">
                 Software Engineer capable of developing efficient scalable
-                full-stack web-based applications, critical and problem-solving
+                full-stack web-based applications, along with critical and problem-solving
                 skills for design and construction of software and work
-                collaboratively on software components
+                collaboratively on software development.
               </p>
             </div>
           </section>
 
           <section>
-            <div className=" text-white">
-              <h3 className="text-5xl py-4">Projects</h3>
+            <div className=" text-white p-10">
+              <h3 className="text-5xl text-transparent bg-clip-text bg-gradient-to-r from-slate-50 to-zinc-600 py-4 ">Projects</h3>
               <p >Since the beggining of my journey as a <span className=" text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-pink-600">Software Engineer</span>, I've done many projects both for business and consumer use.</p>
+            </div>
+            <div className="lg:flex shadow-lg shadow-black p-10 rounded-xl">
+              <p className="text-white">
+              dakpoawciodaipcduja
+              w8mdcua80umdc8auedmc0awd98
+              acmwu0d9cuaw09u0890cmq30ud
+              0c90w9ac9cdw</p>
             </div>
           </section>
 
