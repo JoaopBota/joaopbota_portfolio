@@ -64,57 +64,89 @@ export default function Home() {
 
         <section>
           <div className="lg:justify-center md:flex p-8 gap-10">
-            <div className="shadow-lg shadow-black rounded-xl text-center w-96 overflow-hidden hover:shadow-xl hover:scale-105 duration-500 transform transition">
+            <div className="shadow-lg shadow-black rounded-xl text-center w-auto 2xl:w-96 overflow-hidden hover:shadow-xl hover:scale-105 duration-500 transform transition mb-20">
               <Image src={snowfall} />
               <h3 className="text-white text-3xl py-4">SnowCore</h3>
-              <p className="text-white text-justify px-10">
-                dakpoawciodaipcdujaw8mdcua80umdc8auedmc0awd98aa
-                cmwu0d9cuaw09u0890cmq30ud0c90w9ac9cdwaasda123aa
+              <p className="text-md mx-8 py-3 leading-8 font-Varela text-zinc-400 text-justify">
+                Software Engineer capable of developing efficient scalable
+                full-stack web-based applications, along with critical and problem-solving
               </p>
               <ul className="text-xl flex justify-center gap-5 py-3 text-white">
                 <li>JavaScript</li>
                 <li>React</li>
                 <li>Node</li>
               </ul>
+              <div className="py-5"><a className=" bg-gradient-to-r from-orange-500 to-pink-600 text-white px-4 py-1  rounded-xl ml-6 text-xl" href="#">Code</a></div>
             </div>
-            <div className="shadow-lg shadow-black rounded-xl text-center w-96 overflow-hidden hover:shadow-xl hover:scale-105 duration-500 transform transition">
+            <div className="shadow-lg shadow-black rounded-xl text-center w-auto 2xl:w-96 overflow-hidden hover:shadow-xl hover:scale-105 duration-500 transform transition mb-20">
               <Image src={predicter} />
-              <h3 className="text-white text-3xl py-4">Stock Predictions</h3>
-              <p className="text-white text-justify px-8">
-                dakpoawciodaipcdujaw8mdcua80umaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+              <h3 className="text-white text-3xl py-4">SnowCore</h3>
+              <p className="text-md mx-8 py-3 leading-8 font-Varela text-zinc-400 text-justify">
+                Software Engineer capable of developing efficient scalable
+                full-stack web-based applications, along with critical and problem-solving
               </p>
               <ul className="text-xl flex justify-center gap-5 py-3 text-white">
                 <li>JavaScript</li>
                 <li>React</li>
                 <li>Node</li>
               </ul>
+              <div className="py-5"><a className=" bg-gradient-to-r from-orange-500 to-pink-600 text-white px-4 py-1  rounded-xl ml-6 text-xl" href="#">Code</a></div>
             </div>
-            <div className="shadow-lg shadow-black rounded-xl text-center w-96 overflow-hidden hover:shadow-xl hover:scale-105 duration-500 transform transition">
+            <div className="shadow-lg shadow-black rounded-xl text-center w-auto 2xl:w-96 overflow-hidden hover:shadow-xl hover:scale-105 duration-500 transform transition mb-20">
               <Image src={pointsofinterest} />
-              <h3 className="text-white text-3xl py-4">Stock Predictions</h3>
-              <p className="text-white text-justify px-8">
-                dakpoawciodaipcdujaw8mdcua80umaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+              <h3 className="text-white text-3xl py-4">SnowCore</h3>
+              <p className="text-md mx-8 py-3 leading-8 font-Varela text-zinc-400 text-justify">
+                Software Engineer capable of developing efficient scalable
+                full-stack web-based applications, along with critical and problem-solving
               </p>
               <ul className="text-xl flex justify-center gap-5 py-3 text-white">
                 <li>JavaScript</li>
                 <li>React</li>
                 <li>Node</li>
               </ul>
+              <div className="py-5"><a className=" bg-gradient-to-r from-orange-500 to-pink-600 text-white px-4 py-1  rounded-xl ml-6 text-xl" href="#">Code</a></div>
             </div>
-            <div className="shadow-lg shadow-black rounded-xl text-center w-96 overflow-hidden hover:shadow-xl hover:scale-105 duration-500 transform transition">
+            <div className="shadow-lg shadow-black rounded-xl text-center w-auto 2xl:w-96 overflow-hidden hover:shadow-xl hover:scale-105 duration-500 transform transition mb-20">
               <Image src={animalrescue} />
-              <h3 className="text-white text-3xl py-4">Stock Predictions</h3>
-              <p className="text-white text-justify px-8">
-                dakpoawciodaipcdujaw8mdcua80umaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+              <h3 className="text-white text-3xl py-4">SnowCore</h3>
+              <p className="text-md mx-8 py-3 leading-8 font-Varela text-zinc-400 text-justify">
+                Software Engineer capable of developing efficient scalable
+                full-stack web-based applications, along with critical and problem-solving
               </p>
               <ul className="text-xl flex justify-center gap-5 py-3 text-white">
                 <li>JavaScript</li>
                 <li>React</li>
                 <li>Node</li>
               </ul>
+              <div className="py-5"><a className=" bg-gradient-to-r from-orange-500 to-pink-600 text-white px-4 py-1  rounded-xl ml-6 text-xl" href="#">Code</a></div>
             </div>
           </div>
         </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
       </main>
     </div>
   );
