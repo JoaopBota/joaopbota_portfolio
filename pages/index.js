@@ -1,9 +1,12 @@
 import Head from "next/head";
-import { BsFillMoonStarsFill } from "react-icons/bs";
 import { AiFillLinkedin } from "react-icons/ai";
 import { AiFillGithub } from "react-icons/ai";
 import Image from "next/image";
 import profile_picture from '../public/IMG_6620.jpg'
+import snowfall from '../public/snowfall.jpg'
+import predicter from '../public/predicter.jpg'
+import pointsofinterest from '../public/pointsofinterest.jpg'
+import animalrescue from '../public/animalrescue.jpg'
 
 export default function Home() {
   return (
@@ -15,7 +18,7 @@ export default function Home() {
       </Head>
 
       <main className=" bg-zinc-800 px-40">
-        <section className=" bg-zinc-800  min-h-screen">
+        <section className=" bg-zinc-800 min-h-screen">
           <nav className="py-8 mb-12 flex justify-between">
             <h1 className=" text-xl font-Varela text-white">Portfolio</h1>
             <ul className="flex items-center">
@@ -34,34 +37,80 @@ export default function Home() {
             </ul>
           </nav>
           <section>
-            <div className=" relative mx-auto w-72"><Image className="rounded-full shadow-sm" src={profile_picture} /></div>
             <div className="p-8">
-              <h2 className="text-transparent text-6xl bg-clip-text bg-gradient-to-r from-orange-500 to-pink-600">João Bota</h2>
-              <h3 className="text-2xl py-2 font-Varela text-transparent bg-clip-text bg-gradient-to-r from-white to-zinc-600">Developer</h3>
-              <p className="text-md py-3 leading-8 font-Varela text-white">
+              <div className="flex-1 lg:">
+              <h2 className="text-transparent text-6xl bg-clip-text bg-gradient-to-r from-orange-500 to-pink-600 w-72 lg:text-9xl lg:w-auto">João Bota</h2>
+              <h3 className="text-4xl py-2 font-Varela text-transparent bg-clip-text bg-gradient-to-r from-white to-zinc-600 w-56">Developer</h3>
+              <div className="sm:mx-auto w-60"><Image className="rounded-full shadow-sm " src={profile_picture} /></div>
+              </div>
+              
+              <p className="text-md py-3 leading-8 font-Varela  text-zinc-400">
                 Software Engineer capable of developing efficient scalable
                 full-stack web-based applications, along with critical and problem-solving
                 skills for design and construction of software and work
                 collaboratively on software development.
               </p>
             </div>
-          </section>
-
-          <section>
-            <div className=" text-white p-10">
+            <div className="text-white p-10">
               <h3 className="text-5xl text-transparent bg-clip-text bg-gradient-to-r from-slate-50 to-zinc-600 py-4 ">Projects</h3>
               <p >Since the beggining of my journey as a <span className=" text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-pink-600">Software Engineer</span>, I've done many projects both for business and consumer use.</p>
             </div>
-            <div className="lg:flex shadow-lg shadow-black p-10 rounded-xl">
-              <p className="text-white">
-              dakpoawciodaipcduja
-              w8mdcua80umdc8auedmc0awd98
-              acmwu0d9cuaw09u0890cmq30ud
-              0c90w9ac9cdw</p>
-            </div>
+          </section>
           </section>
 
-        </section>
+          <section>
+            <div className="lg:justify-center md:flex p-8 gap-10">
+            <div className="shadow-lg shadow-black rounded-xl text-center w-96 overflow-hidden hover:shadow-xl hover:scale-105 duration-500 transform transition">
+              <Image src={snowfall}/>
+              <h3 className="text-white text-3xl py-4">SnowCore</h3>
+              <p className="text-white text-justify px-10">
+              dakpoawciodaipcdujaw8mdcua80umdc8auedmc0awd98aa
+              cmwu0d9cuaw09u0890cmq30ud0c90w9ac9cdwaasda123aa
+              </p>
+                <ul className="text-xl flex justify-center gap-5 py-3 text-white">
+                <li>JavaScript</li>
+                <li>React</li>
+                <li>Node</li>
+                </ul>
+            </div>
+            <div className="shadow-lg shadow-black rounded-xl text-center w-96 overflow-hidden hover:shadow-xl hover:scale-105 duration-500 transform transition">
+              <Image src={predicter}/>
+              <h3 className="text-white text-3xl py-4">Stock Predictions</h3>
+              <p className="text-white text-justify px-8">
+              dakpoawciodaipcdujaw8mdcua80umaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+              </p>
+                <ul className="text-xl flex justify-center gap-5 py-3 text-white">
+                <li>JavaScript</li>
+                <li>React</li>
+                <li>Node</li>
+                </ul>
+            </div>
+            <div className="shadow-lg shadow-black rounded-xl text-center w-96 overflow-hidden hover:shadow-xl hover:scale-105 duration-500 transform transition">
+              <Image src={pointsofinterest}/>
+              <h3 className="text-white text-3xl py-4">Stock Predictions</h3>
+              <p className="text-white text-justify px-8">
+              dakpoawciodaipcdujaw8mdcua80umaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+              </p>
+                <ul className="text-xl flex justify-center gap-5 py-3 text-white">
+                <li>JavaScript</li>
+                <li>React</li>
+                <li>Node</li>
+                </ul>
+            </div>
+            <div className="shadow-lg shadow-black rounded-xl text-center w-96 overflow-hidden hover:shadow-xl hover:scale-105 duration-500 transform transition">
+              <Image src={animalrescue }/>
+              <h3 className="text-white text-3xl py-4">Stock Predictions</h3>
+              <p className="text-white text-justify px-8">
+              dakpoawciodaipcdujaw8mdcua80umaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+              </p>
+                <ul className="text-xl flex justify-center gap-5 py-3 text-white">
+                <li>JavaScript</li>
+                <li>React</li>
+                <li>Node</li>
+                </ul>
+            </div>
+            </div>
+          </section>
       </main>
     </div>
   );
