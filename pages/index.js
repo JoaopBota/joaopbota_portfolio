@@ -56,8 +56,8 @@ export default function Home() {
               </p>
             </div>
             <div className="text-zinc-400 p-10">
-              <h3 className="text-5xl text-transparent bg-clip-text bg-gradient-to-r from-slate-50 to-zinc-600 py-4 ">Projects</h3>
-              <p >Since the beggining of my journey as a <span className=" text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-pink-600">Software Engineer</span>, I've done many projects both for business and consumer use.</p>
+              <h3 className="2xl:w-1/4 text-5xl sm:text-7xl text-transparent bg-clip-text bg-gradient-to-r from-slate-50 to-zinc-600 py-4 ">Projects</h3>
+              <p className="sm:text-xl">Since the beggining of my journey as a <span className="  text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-pink-600">Software Engineer</span>, I've done many projects both for business and consumer use.</p>
             </div>
           </section>
         </section>
