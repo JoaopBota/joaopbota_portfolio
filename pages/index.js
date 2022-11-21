@@ -17,20 +17,20 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className=" bg-zinc-800 px-40">
-        <section className=" bg-zinc-800 min-h-screen">
+      <main className=" bg-zinc-800 px- sm:px-40">
+        <section className=" bg-zinc-800 sm:min-h-screen">
           <nav className="py-8 mb-12 flex justify-between">
-            <h1 className=" text-xl font-Varela text-white">Portfolio</h1>
+            <h1 className=" text-xl font-Varela text-white px-6 sm:px-0">Portfolio</h1>
             <ul className="flex items-center">
               <div className="text-3xl flex justify-center gap-2 text-white"> <li>
                 <AiFillLinkedin />
               </li>
                 <li><AiFillGithub />
                 </li>
-                </div>
+              </div>
               <li>
                 <a
-                  className=" bg-gradient-to-r from-orange-500 to-pink-600 text-white px-4 py-1  rounded-xl ml-6" href="#">
+                  className=" bg-gradient-to-r from-orange-500 to-pink-600 text-white mr-4 sm:mr-0 px-4 py-1  rounded-xl ml-6" href="#">
                   Resume
                 </a>
               </li>
@@ -38,79 +38,83 @@ export default function Home() {
           </nav>
           <section>
             <div className="p-8">
-              <div className="flex-1 lg:">
-              <h2 className="text-transparent text-6xl bg-clip-text bg-gradient-to-r from-orange-500 to-pink-600 w-72 lg:text-9xl lg:w-auto">João Bota</h2>
-              <h3 className="text-4xl py-2 font-Varela text-transparent bg-clip-text bg-gradient-to-r from-white to-zinc-600 w-56">Developer</h3>
-              <div className="sm:mx-auto w-60"><Image className="rounded-full shadow-sm " src={profile_picture} /></div>
+              <h1 className="font-Varela text-transparent bg-clip-text bg-gradient-to-r from-white to-zinc-600 text-5xl sm:text-6xl md:text-6xl lg:text-8xl">Welcome To<br></br> My Personal  Portfolio </h1>
+              <p></p>
+            </div>
+            <div className="p-8">
+              <div className="flex-1">
+                <div className="lg:mx-auto w-2/4 xl:w-96"><Image className="rounded-full shadow-sm" src={profile_picture} /></div>
+                <h2 className="lg:mx-auto text-transparent text-6xl bg-clip-text bg-gradient-to-r from-orange-500 to-pink-600 lg:text-8xl xl:text-center">João Bota</h2>
+                <h3 className="mx-auto text-4xl py-2 font-Varela text-transparent bg-clip-text bg-gradient-to-r from-white to-zinc-600 xl:text-center 2xl:w-1/4">Developer</h3>
               </div>
-              
-              <p className="text-md py-3 leading-8 font-Varela  text-zinc-400">
+
+              <p className="text-md py-3 leading-8 font-Varela text-zinc-400 xl:w-2/4 lg:text-center lg:mx-auto text-left">
                 Software Engineer capable of developing efficient scalable
                 full-stack web-based applications, along with critical and problem-solving
                 skills for design and construction of software and work
                 collaboratively on software development.
               </p>
             </div>
-            <div className="text-white p-10">
+            <div className="text-zinc-400 p-10">
               <h3 className="text-5xl text-transparent bg-clip-text bg-gradient-to-r from-slate-50 to-zinc-600 py-4 ">Projects</h3>
               <p >Since the beggining of my journey as a <span className=" text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-pink-600">Software Engineer</span>, I've done many projects both for business and consumer use.</p>
             </div>
           </section>
-          </section>
+        </section>
 
-          <section>
-            <div className="lg:justify-center md:flex p-8 gap-10">
+        <section>
+          <div className="lg:justify-center md:flex p-8 gap-10">
             <div className="shadow-lg shadow-black rounded-xl text-center w-96 overflow-hidden hover:shadow-xl hover:scale-105 duration-500 transform transition">
-              <Image src={snowfall}/>
+              <Image src={snowfall} />
               <h3 className="text-white text-3xl py-4">SnowCore</h3>
               <p className="text-white text-justify px-10">
-              dakpoawciodaipcdujaw8mdcua80umdc8auedmc0awd98aa
-              cmwu0d9cuaw09u0890cmq30ud0c90w9ac9cdwaasda123aa
+                dakpoawciodaipcdujaw8mdcua80umdc8auedmc0awd98aa
+                cmwu0d9cuaw09u0890cmq30ud0c90w9ac9cdwaasda123aa
               </p>
-                <ul className="text-xl flex justify-center gap-5 py-3 text-white">
+              <ul className="text-xl flex justify-center gap-5 py-3 text-white">
                 <li>JavaScript</li>
                 <li>React</li>
                 <li>Node</li>
-                </ul>
+              </ul>
             </div>
             <div className="shadow-lg shadow-black rounded-xl text-center w-96 overflow-hidden hover:shadow-xl hover:scale-105 duration-500 transform transition">
-              <Image src={predicter}/>
+              <Image src={predicter} />
               <h3 className="text-white text-3xl py-4">Stock Predictions</h3>
               <p className="text-white text-justify px-8">
-              dakpoawciodaipcdujaw8mdcua80umaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+                dakpoawciodaipcdujaw8mdcua80umaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
               </p>
-                <ul className="text-xl flex justify-center gap-5 py-3 text-white">
+              <ul className="text-xl flex justify-center gap-5 py-3 text-white">
                 <li>JavaScript</li>
                 <li>React</li>
                 <li>Node</li>
-                </ul>
+              </ul>
             </div>
             <div className="shadow-lg shadow-black rounded-xl text-center w-96 overflow-hidden hover:shadow-xl hover:scale-105 duration-500 transform transition">
-              <Image src={pointsofinterest}/>
+              <Image src={pointsofinterest} />
               <h3 className="text-white text-3xl py-4">Stock Predictions</h3>
               <p className="text-white text-justify px-8">
-              dakpoawciodaipcdujaw8mdcua80umaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+                dakpoawciodaipcdujaw8mdcua80umaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
               </p>
-                <ul className="text-xl flex justify-center gap-5 py-3 text-white">
+              <ul className="text-xl flex justify-center gap-5 py-3 text-white">
                 <li>JavaScript</li>
                 <li>React</li>
                 <li>Node</li>
-                </ul>
+              </ul>
             </div>
             <div className="shadow-lg shadow-black rounded-xl text-center w-96 overflow-hidden hover:shadow-xl hover:scale-105 duration-500 transform transition">
-              <Image src={animalrescue }/>
+              <Image src={animalrescue} />
               <h3 className="text-white text-3xl py-4">Stock Predictions</h3>
               <p className="text-white text-justify px-8">
-              dakpoawciodaipcdujaw8mdcua80umaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+                dakpoawciodaipcdujaw8mdcua80umaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
               </p>
-                <ul className="text-xl flex justify-center gap-5 py-3 text-white">
+              <ul className="text-xl flex justify-center gap-5 py-3 text-white">
                 <li>JavaScript</li>
                 <li>React</li>
                 <li>Node</li>
-                </ul>
+              </ul>
             </div>
-            </div>
-          </section>
+          </div>
+        </section>
       </main>
     </div>
   );
