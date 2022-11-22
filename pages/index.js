@@ -294,7 +294,7 @@ export default function Home() {
                 Skills
               </h3>
               <p className="sm:text-xl">
-                Since the beggining of my journey as a{" "}
+                Since the beggining of my journey as a
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-pink-600">
                   Software Engineer
                 </span>
@@ -304,23 +304,24 @@ export default function Home() {
             </div>
             </section>
 
-            <section className="">
+            <section >
+              <div className="bg-origins bg-cover">
             <div className="sm:flex">
               <div className="sm:my-16 p-8 text-right">
               <h4 className="text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-pink-600 text-6xl">Front End</h4>
               </div>
 
 
-            <div className="grid grid-cols-3 gap-8 text-white text-2xl p-8 justify-items-center ml-4 mr-4 max-w-3xl shadow-2xl shadow-black rounded-xl">
-                <p ><SiJavascript className="text-6xl text-yellow-400 mb-2 2xl:text-8xl"/>JavaScript</p> 
-                <p><SiReact className="text-6xl text-teal-300 mb-2 2xl:text-8xl"/><p className="text-center">React</p></p>
-                <p><SiHtml5 className="text-6xl text-orange-600 mb-2 2xl:text-8xl"/><p className="text-center">HTML</p></p>
-                <p><SiNextdotjs className="text-6xl text-white mb-2 mr-10 2xl:text-8xl"/><p>Next.js</p></p>
-                <p><SiThreedotjs className="text-6xl text-white mb-2 2xl:text-8xl"/><p className="text-center">Three.js</p></p>
-                <p><SiNpm className="text-6xl text-red-600 mb-2 2xl:text-8xl"/><p className="text-center">NPM</p></p>
-                <p><SiPwa className="text-6xl text-white mb-2 mr-10 2xl:text-8xl"/><p className="2xl:ml-4">PWA</p></p>
-                <p><SiTailwindcss className="text-6xl text-cyan-500 mb-2 2xl:text-8xl"/> Tailwind</p>
-                <p><SiCss3 className="text-6xl text-sky-700 mb-2 2xl:text-8xl"/><p className="text-center">CSS</p></p>
+            <div className="grid grid-cols-3 gap-8 text-white text-2xl p-8 justify-items-center ml-4 mr-4 max-w-3xl shadow-2xl shadow-black rounded-xl ">
+                <div><SiJavascript className="text-6xl text-yellow-400 mb-2 2xl:text-8xl"/><p>JavaScript</p></div>
+                <div><SiReact className="text-6xl text-teal-300 mb-2 2xl:text-8xl"/><p className="text-center">React</p></div>
+                <div><SiHtml5 className="text-6xl text-orange-600 mb-2 2xl:text-8xl"/><p>HTML</p></div>
+                <div><SiNextdotjs className="text-6xl text-white mb-2 mr-10 2xl:text-8xl"/><p>Next.js</p></div>
+                <div><SiThreedotjs className="text-6xl text-white mb-2 2xl:text-8xl"/><p className="text-center">Three.js</p></div>
+                <div><SiNpm className="text-6xl text-red-600 mb-2 2xl:text-8xl"/><p className="text-center">NPM</p></div>
+                <div><SiPwa className="text-6xl text-white mb-2 mr-10 2xl:text-8xl"/><p className="2xl:ml-4">PWA</p></div>
+                <div><SiTailwindcss className="text-6xl text-cyan-500 mb-2 2xl:text-8xl"/> <p>Tailwind</p></div>
+                <div><SiCss3 className="text-6xl text-sky-700 mb-2 2xl:text-8xl"/><p className="text-center">CSS</p></div>   
             </div>
             </div>
             <div className="sm:flex justify-end mt-14">
@@ -330,26 +331,16 @@ export default function Home() {
 
 
             <div className="grid grid-cols-3 gap-8 text-white text-2xl p-8 justify-items-center ml-4 mr-4 max-w-3xl shadow-2xl shadow-black rounded-xl">
-                <p ><SiJavascript className="text-6xl text-yellow-400 mb-2 2xl:text-8xl"/>JavaScript</p> 
-                <p><SiReact className="text-6xl text-teal-300 mb-2 2xl:text-8xl"/><p className="text-center">React</p></p>
-                <p><SiHtml5 className="text-6xl text-orange-600 mb-2 2xl:text-8xl"/><p className="text-center">HTML</p></p>
-                <p><SiNextdotjs className="text-6xl text-white mb-2 mr-10 2xl:text-8xl"/><p>Next.js</p></p>
-                <p><SiThreedotjs className="text-6xl text-white mb-2 2xl:text-8xl"/><p className="text-center">Three.js</p></p>
-                <p><SiNpm className="text-6xl text-red-600 mb-2 2xl:text-8xl"/><p className="text-center">NPM</p></p>
+            <div><SiJavascript className="text-6xl text-yellow-400 mb-2 2xl:text-8xl"/><p>JavaScript</p> </div>
+            <div><SiReact className="text-6xl text-teal-300 mb-2 2xl:text-8xl"/><p>React</p></div>
+            <div><SiHtml5 className="text-6xl text-orange-600 mb-2 2xl:text-8xl"/><p className="text-center">HTML</p></div>
+            <div><SiNextdotjs className="text-6xl text-white mb-2 mr-10 2xl:text-8xl"/><p>Next.js</p></div>
+            <div><SiThreedotjs className="text-6xl text-white mb-2 2xl:text-8xl"/><p className="text-center">Three.js</p></div>
+            <div><SiNpm className="text-6xl text-red-600 mb-2 2xl:text-8xl"/><p className="text-center">NPM</p></div>
             </div>
             </div>
-            
-
-
-
-
-          
-            
-
-              
-            
-              
-            
+            </div>
+   
             </section>
              
       </main>

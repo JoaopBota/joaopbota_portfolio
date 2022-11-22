@@ -8,6 +8,9 @@ module.exports = {
     extend: {
       fontFamily: {
         Varela: 'varela',
+      },
+      backgroundImage: {
+        'origins': "url(../public/background2.png)"
       }
     },
   },
