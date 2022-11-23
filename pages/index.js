@@ -37,7 +37,7 @@ export default function Home() {
       </Head>
 
       <main className=" bg-zinc-800 px- sm:px-40">
-        <section className=" bg-zinc-800 sm:min-h-screen font-Varela">
+        <section className=" bg-zinc-800  font-Varela">
           <nav className="py-8 mb-12 flex justify-between">
             <h1 className=" text-xl font-Varela text-white px-6 sm:px-0">
               Portfolio
@@ -91,7 +91,6 @@ export default function Home() {
                   Developer
                 </h3>
               </div>
-
               <p className="text-md py-3 leading-8 font-Varela text-zinc-400 xl:w-2/4 lg:text-center lg:mx-auto text-left">
                 Software Engineer capable of developing efficient scalable
                 full-stack web-based applications, along with critical and
@@ -103,7 +102,7 @@ export default function Home() {
               <h3 className="2xl:w-1/4 text-5xl sm:text-7xl text-transparent bg-clip-text bg-gradient-to-r from-slate-50 to-zinc-600 py-4 ">
                 Projects
               </h3>
-              <p className="sm:text-xl">
+              <p className="sm:text-xl p-6">
                 Since the beggining of my journey as a{" "}
                 <span className="  text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-pink-600">
                   Software Engineer
@@ -115,94 +114,98 @@ export default function Home() {
         </section>
 
         <section>
-          <div className="lg:justify-center md:flex p-8 gap-10">
-            <div className="shadow-lg shadow-black rounded-xl text-center w-auto 2xl:w-96 overflow-hidden hover:shadow-xl hover:scale-105 duration-500 transform transition mb-20">
-              <Image src={snowfall} />
-              <h3 className="text-white text-3xl py-4">SnowCore</h3>
+          <div className="sm:grid md:grid-cols-2 2xl:grid-cols-4 2xl:gap-4 m-8 sm:m-0 sm:mt-10">
+            <div className="shadow-lg shadow-black rounded-2xl overflow-hidden hover:shadow-xl hover:scale-105 duration-500 transform transition pb-10 mb-10 sm:mb-0 ">
+              <Image src={snowfall} className="object-cover" />
+              <h3 className="text-white text-3xl py-4 text-center">SnowCore</h3>
               <p className="text-md mx-8 py-3 leading-8 font-Varela text-zinc-400 text-justify">
-                Progressive Web Application (PWA) which allows users to see
-                historical snowfall,location, forecast for snowfall in different
-                sky resorts.
+                Progressive Web Application (PWA) which allows users to see the
+                location, forecast for snowfall in five days, the current
+                weather, snow size, and the website that gathers the snowfall
+                data of each ski resort
               </p>
-              <ul className="text-xl flex justify-center gap-5 py-3 text-white">
-                <li>JavaScript</li>
-                <li>React</li>
-                <li>API</li>
-              </ul>
-              <div className="py-5">
+              <div className="font-bold text-transparent bg-clip-text bg-gradient-to-r from-white to-zinc-400 text-xl py-4 text-center mx-8">
+                <h4>JavaScript React API Auth</h4>
+              </div>
+              <div className="text-right mt-5 mr-10">
                 <a
                   target="_blank"
-                  className=" bg-gradient-to-r from-orange-500 to-pink-600 text-white px-4 py-1  rounded-xl ml-6 text-xl"
+                  className="bg-gradient-to-r from-orange-500 to-pink-600 text-white px-4 py-1  rounded-xl ml-6 text-xl"
                   href="https://github.com/JoaopBota/SnowFallData/tree/main/snowfallresort"
                 >
                   Code
                 </a>
               </div>
             </div>
-            <div className="shadow-lg shadow-black rounded-xl text-center w-auto 2xl:w-96 overflow-hidden hover:shadow-xl hover:scale-105 duration-500 transform transition mb-20">
-              <Image src={predicter} />
-              <h3 className="text-white text-3xl py-4">Solfintech</h3>
+            <div className="shadow-lg shadow-black rounded-2xl overflow-hidden hover:shadow-xl hover:scale-105 duration-500 transform transition pb-10 mb-10 sm:mb-0 ">
+              <Image src={predicter} className="object-cover" />
+              <h3 className="text-white text-3xl py-4 text-center">
+                Solfintech
+              </h3>
               <p className="text-md mx-8 py-3 leading-8 font-Varela text-zinc-400 text-justify">
-                Software Engineer capable of developing efficient scalable
-                full-stack web-based applications, along with critical and
-                problem-solving
+                With the help of AI (Facebook Prophet), it allows us to predict
+                stock prices on a daily, weekly, monthly, and yearly basis.
+                Display graphical performance, trends graphs, and charts,
+                assisting user forecast investments
               </p>
-              <ul className="text-xl flex justify-center gap-5 py-3 text-white">
-                <li>JavaScript</li>
-                <li>React</li>
-                <li>Node</li>
-              </ul>
-              <div className="py-5">
+              <div className="font-bold text-transparent bg-clip-text bg-gradient-to-r from-white to-zinc-400 text-xl py-4 text-center mx-8">
+                <h4 className=" whitespace-normal">
+                  Python Anaconda Prophet Streamlit
+                </h4>
+              </div>
+              <div className="text-right mt-5 mr-10">
                 <a
                   target="_blank"
-                  className=" bg-gradient-to-r from-orange-500 to-pink-600 text-white px-4 py-1  rounded-xl ml-6 text-xl"
+                  className="bg-gradient-to-r from-orange-500 to-pink-600 text-white px-4 py-1  rounded-xl ml-6 text-xl"
                   href="https://github.com/JoaopBota/StockPredicter"
                 >
                   Code
                 </a>
               </div>
             </div>
-            <div className="shadow-lg shadow-black rounded-xl text-center w-auto 2xl:w-96 overflow-hidden hover:shadow-xl hover:scale-105 duration-500 transform transition mb-20">
-              <Image src={pointsofinterest} />
-              <h3 className="text-white text-3xl py-4">Points of Interest</h3>
+            <div className="shadow-lg shadow-black rounded-2xl overflow-hidden hover:shadow-xl hover:scale-105 duration-500 transform transition pb-10 mb-10 sm:mb-0">
+              <Image src={pointsofinterest} className="object-cover" />
+              <h3 className="text-white text-3xl py-4 text-center">
+                Points of Interest
+              </h3>
               <p className="text-md mx-8 py-3 leading-8 font-Varela text-zinc-400 text-justify">
-                Software Engineer capable of developing efficient scalable
-                full-stack web-based applications, along with critical and
-                problem-solving
+                Allows the user to view nearby points of interest (POIs). The
+                user can create POIs, view them on a map, and store them in the
+                onboard SQLite database as well as download them from a web API
+                and save them to the web
               </p>
-              <ul className="text-xl flex justify-center gap-5 py-3 text-white">
-                <li>JavaScript</li>
-                <li>React</li>
-                <li>Node</li>
-              </ul>
-              <div className="py-5">
+              <div className="font-bold text-transparent bg-clip-text bg-gradient-to-r from-white to-zinc-400 text-xl py-4 text-center mx-8">
+                <h4>JavaScript MYSQL Express Node</h4>
+              </div>
+              <div className="text-right mt-5 mr-10">
                 <a
                   target="_blank"
-                  className=" bg-gradient-to-r from-orange-500 to-pink-600 text-white px-4 py-1  rounded-xl ml-6 text-xl"
+                  className="bg-gradient-to-r from-orange-500 to-pink-600 text-white px-4 py-1  rounded-xl ml-6 text-xl"
                   href="https://github.com/JoaopBota/PoisWeb"
                 >
                   Code
                 </a>
               </div>
             </div>
-            <div className="shadow-lg shadow-black rounded-xl text-center w-auto 2xl:w-96 overflow-hidden hover:shadow-xl hover:scale-105 duration-500 transform transition mb-20">
-              <Image src={animalrescue} />
-              <h3 className="text-white text-3xl py-4">Animal Rescue</h3>
+            <div className="shadow-lg shadow-black rounded-2xl overflow-hidden hover:shadow-xl hover:scale-105 duration-500 transform transition pb-10 mb-10 sm:mb-0">
+              <Image src={animalrescue} className="object-cover" />
+              <h3 className="text-white text-3xl py-4 text-center">
+                Animal Rescue
+              </h3>
               <p className="text-md mx-8 py-3 leading-8 font-Varela text-zinc-400 text-justify">
-                Software Engineer capable of developing efficient scalable
-                full-stack web-based applications, along with critical and
-                problem-solving
+                Proof-of-concept data-driven full-stack web application that
+                helps find lost dogs or adopt one. Animal Rescue enables a user
+                to add a post with some information such as Dog’s name, breed,
+                location, and phone number
               </p>
-              <ul className="text-xl flex justify-center gap-5 py-3 text-white">
-                <li>JavaScript</li>
-                <li>React</li>
-                <li>Node</li>
-              </ul>
-              <div className="py-5">
+              <div className="font-bold text-transparent bg-clip-text bg-gradient-to-r from-white to-zinc-400 text-xl py-4 text-center mx-8">
+                <h4>JavaScript MongoDB Express React</h4>
+              </div>
+              <div className="text-right mt-5 mr-10">
                 <a
                   target="_blank"
-                  className=" bg-gradient-to-r from-orange-500 to-pink-600 text-white px-4 py-1  rounded-xl ml-6 text-xl"
-                  href="https://github.com/JoaopBota/AnimalRescue"
+                  className="bg-gradient-to-r from-orange-500 to-pink-600 text-white px-4 py-1  rounded-xl ml-6 text-xl"
+                  href="https://github.com/JoaopBota/ChatBot_w-AI"
                 >
                   Code
                 </a>
@@ -212,95 +215,96 @@ export default function Home() {
         </section>
 
         <section>
-          <div className="lg:justify-center md:flex p-8 gap-10">
-            <div className="shadow-lg shadow-black rounded-xl text-center w-auto 2xl:w-96 overflow-hidden hover:shadow-xl hover:scale-105 duration-500 transform transition mb-20">
-              <Image src={ChatBotAI} />
-              <h3 className="text-white text-3xl py-4">ChatBotAI</h3>
+          <div className="sm:grid md:grid-cols-2 2xl:grid-cols-4 2xl:gap-4 m-8 sm:m-0 sm:mt-10">
+            <div className="shadow-lg shadow-black rounded-2xl overflow-hidden hover:shadow-xl hover:scale-105 duration-500 transform transition pb-10 mb-10 sm:mb-0 ">
+              <Image src={ChatBotAI} className="object-cover" />
+              <h3 className="text-white text-3xl py-4 text-center">
+                ChatBotAI
+              </h3>
               <p className="text-md mx-8 py-3 leading-8 font-Varela text-zinc-400 text-justify">
-                Software Engineer capable of developing efficient scalable
-                full-stack web-based applications, along with critical and
-                problem-solving
+                The project is capable of communicating similarly to a human, It
+                answers many questions related to a restaurant establishment.
+                The main use is in customer interaction in a business.
               </p>
-              <ul className="text-xl flex justify-center gap-5 py-3 text-white">
-                <li>JavaScript</li>
-                <li>React</li>
-                <li>Node</li>
-              </ul>
-              <div className="py-5">
+              <div className="font-bold text-transparent bg-clip-text bg-gradient-to-r from-white to-zinc-400 text-xl py-4 text-center mx-8">
+                <h4>Python Numpy NLTK Tkinter</h4>
+              </div>
+              <div className="text-right mt-5 mr-10">
                 <a
                   target="_blank"
-                  className=" bg-gradient-to-r from-orange-500 to-pink-600 text-white px-4 py-1  rounded-xl ml-6 text-xl"
+                  className="bg-gradient-to-r from-orange-500 to-pink-600 text-white px-4 py-1  rounded-xl ml-6 text-xl"
                   href="https://github.com/JoaopBota/ChatBot_w-AI"
                 >
                   Code
                 </a>
               </div>
             </div>
-            <div className="shadow-lg shadow-black rounded-xl text-center w-auto 2xl:w-96 overflow-hidden hover:shadow-xl hover:scale-105 duration-500 transform transition mb-20">
-              <Image src={MobileAPP} />
-              <h3 className="text-white text-3xl py-4">
+            <div className="shadow-lg shadow-black rounded-2xl overflow-hidden hover:shadow-xl hover:scale-105 duration-500 transform transition pb-10 mb-10 sm:mb-0 ">
+              <Image src={MobileAPP} className="object-cover" />
+              <h3 className="text-white text-3xl py-4 text-center">
                 Mobile Application POIS
               </h3>
               <p className="text-md mx-8 py-3 leading-8 font-Varela text-zinc-400 text-justify">
-                Software Engineer capable of developing efficient scalable
-                full-stack web-based applications, along with critical and
-                problem-solving
+                Android Mobile Application that allows users to view from
+                different data sources, create and store in a ROOM database
+                nearby points of interest, close to the user GPS location, in
+                OpenStreetMap
               </p>
-              <ul className="text-xl flex justify-center gap-5 py-3 text-white">
-                <li>JavaScript</li>
-                <li>React</li>
-                <li>Node</li>
-              </ul>
-              <div className="py-5">
+              <div className="font-bold text-transparent bg-clip-text bg-gradient-to-r from-white to-zinc-400 text-xl py-4 text-center mx-8">
+                <h4 className=" whitespace-normal">JavaScript React Node</h4>
+              </div>
+              <div className="text-right mt-5 mr-10">
                 <a
                   target="_blank"
-                  className=" bg-gradient-to-r from-orange-500 to-pink-600 text-white px-4 py-1  rounded-xl ml-6 text-xl"
+                  className="bg-gradient-to-r from-orange-500 to-pink-600 text-white px-4 py-1  rounded-xl ml-6 text-xl"
                   href="https://github.com/JoaopBota/MobileApp"
                 >
                   Code
                 </a>
               </div>
             </div>
-            <div className="shadow-lg shadow-black rounded-xl text-center w-auto 2xl:w-96 overflow-hidden hover:shadow-xl hover:scale-105 duration-500 transform transition mb-20">
-              <Image src={StormAdviceCenter} />
-              <h3 className="text-white text-3xl py-4">Storm Advice Center</h3>
+            <div className="shadow-lg shadow-black rounded-2xl overflow-hidden hover:shadow-xl hover:scale-105 duration-500 transform transition pb-10 mb-10 sm:mb-0">
+              <Image src={StormAdviceCenter} className="object-cover" />
+              <h3 className="text-white text-3xl py-4 text-center">
+                Storm Advice Center
+              </h3>
               <p className="text-md mx-8 py-3 leading-8 font-Varela text-zinc-400 text-justify">
-                Software Engineer capable of developing efficient scalable
-                full-stack web-based applications, along with critical and
-                problem-solving
+                Storm Advice Centre keeps track of current storms. It logs a
+                storm's name, the wind speed, and the temperature. This is a
+                prototype/test system, it also covers tornados, hurricanes, and
+                blizzards
               </p>
-              <ul className="text-xl flex justify-center gap-5 py-3 text-white">
-                <li>JavaScript</li>
-                <li>React</li>
-                <li>Node</li>
-              </ul>
-              <div className="py-5">
+              <div className="font-bold text-transparent bg-clip-text bg-gradient-to-r from-white to-zinc-400 text-xl py-4 text-center mx-8">
+                <h4>Java</h4>
+              </div>
+              <div className="text-right mt-5 mr-10">
                 <a
                   target="_blank"
-                  className=" bg-gradient-to-r from-orange-500 to-pink-600 text-white px-4 py-1  rounded-xl ml-6 text-xl"
+                  className="bg-gradient-to-r from-orange-500 to-pink-600 text-white px-4 py-1  rounded-xl ml-6 text-xl"
                   href="https://github.com/JoaopBota/StormAdviceCenter"
                 >
                   Code
                 </a>
               </div>
             </div>
-            <div className="shadow-lg shadow-black rounded-xl text-center w-auto 2xl:w-96 overflow-hidden hover:shadow-xl hover:scale-105 duration-500 transform transition mb-20">
-              <Image src={Immersive} />
-              <h3 className="text-white text-3xl py-4">Immersive WebAPP</h3>
+            <div className="shadow-lg shadow-black rounded-2xl overflow-hidden hover:shadow-xl hover:scale-105 duration-500 transform transition pb-10 mb-10 sm:mb-0">
+              <Image src={Immersive} className="object-cover" />
+              <h3 className="text-white text-3xl py-4 text-center">
+                Immersive WebAPP
+              </h3>
               <p className="text-md mx-8 py-3 leading-8 font-Varela text-zinc-400 text-justify">
-                Software Engineer capable of developing efficient scalable
-                full-stack web-based applications, along with critical and
-                problem-solving
+                Augmented or Virtual Reality points of interest application,
+                more specifically a mobile AR web app that shows points of
+                interest close to the user, such as bars, cafes, and
+                restaurants.
               </p>
-              <ul className="text-xl flex justify-center gap-5 py-3 text-white">
-                <li>JavaScript</li>
-                <li>React</li>
-                <li>Node</li>
-              </ul>
-              <div className="py-5">
+              <div className="font-bold text-transparent bg-clip-text bg-gradient-to-r from-white to-zinc-400 text-xl py-4 text-center mx-8">
+                <h4>Kotlin OSMDROID SQlite</h4>
+              </div>
+              <div className="text-right mt-5 mr-10">
                 <a
                   target="_blank"
-                  className=" bg-gradient-to-r from-orange-500 to-pink-600 text-white px-4 py-1  rounded-xl ml-6 text-xl"
+                  className="bg-gradient-to-r from-orange-500 to-pink-600 text-white px-4 py-1  rounded-xl ml-6 text-xl"
                   href="https://github.com/JoaopBota/Immersive"
                 >
                   Code
@@ -316,23 +320,27 @@ export default function Home() {
               <h3 className="2xl:w-1/4 text-5xl sm:text-7xl text-transparent bg-clip-text bg-gradient-to-r from-slate-50 to-zinc-600 py-4 ">
                 Skills
               </h3>
-              <p className="sm:text-xl">
-                Since the beggining of my journey as a
+              <p className="sm:text-xl p-6">
+                I've worked with a range of technologies in the web app
+                development. From{" "}
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-pink-600">
-                  Software Engineer
+                  Front-End
+                </span>{" "}
+                to{" "}
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-pink-600">
+                  Back-End
                 </span>
-                , I've done many projects both for business and consumer use.
               </p>
             </div>
           </div>
         </section>
 
         <section>
-          <div className="sm:bg-origins bg-cover">
+          <div className="sm:bg-origins bg-cover pb-10">
             <div className="sm:flex">
               <div className="sm:my-16 p-8 text-right">
                 <h4 className="text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-pink-600 text-6xl">
-                  Front End
+                  Front-End
                 </h4>
               </div>
               <div className="grid grid-cols-3 gap-8 text-white text-2xl p-8 justify-items-center ml-4 mr-4 max-w-3xl shadow-2xl shadow-black rounded-xl ">
@@ -379,7 +387,7 @@ export default function Home() {
             <div className="sm:flex justify-end mt-14">
               <div className="sm:my-16 p-8 text-right">
                 <h4 className="text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-pink-600 text-6xl">
-                  Backend
+                  Back-End
                 </h4>
               </div>
               <div className="grid grid-cols-3 gap-8 text-white text-2xl p-8 justify-items-center ml-4 mr-4 max-w-3xl shadow-2xl shadow-black rounded-xl">
@@ -412,6 +420,20 @@ export default function Home() {
           </div>
         </section>
       </main>
+      <footer>
+        <div className="text-3xl flex justify-center gap-2 text-white bg-zinc-900 pt-5 pb-2">
+          <a target="_blank" href="https://www.linkedin.com/in/joaobota/">
+            <AiFillLinkedin />
+          </a>
+
+          <a target="_blank" href="https://github.com/JoaopBota">
+            <AiFillGithub />
+          </a>
+        </div>
+        <div className="text-center text-zinc-500 font-Varela font-bold text-xl bg-zinc-900">
+          <h1>João Bota ©2022</h1>
+        </div>
+      </footer>
     </div>
   );
 }
