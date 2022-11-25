@@ -137,6 +137,30 @@ export default function Home() {
                 </a>
               </div>
             </div>
+            <div className="shadow-lg shadow-black rounded-2xl overflow-hidden hover:shadow-xl hover:scale-105 duration-500 transform transition pb-10 mb-10 sm:mb-0">
+              <Image src={pointsofinterest} className="object-cover" />
+              <h3 className="text-white text-3xl py-4 text-center">
+                Points of Interest
+              </h3>
+              <p className="text-md mx-8 py-3 leading-8 font-Varela text-zinc-400 text-justify">
+                Allows the user to view nearby points of interest (POIs). The
+                user can create POIs, view them on a map, and store them in the
+                onboard SQLite database as well as download them from a web API
+                and save them to the web
+              </p>
+              <div className="font-bold text-transparent bg-clip-text bg-gradient-to-r from-white to-zinc-400 text-xl py-4 text-center mx-8">
+                <h4>JavaScript MYSQL Express Node</h4>
+              </div>
+              <div className="text-right mt-5 mr-10">
+                <a
+                  target="_blank"
+                  className="bg-gradient-to-r from-orange-500 to-pink-600 text-white px-4 py-1  rounded-xl ml-6 text-xl"
+                  href="https://github.com/JoaopBota/PoisWeb"
+                >
+                  Code
+                </a>
+              </div>
+            </div>
             <div className="shadow-lg shadow-black rounded-2xl overflow-hidden hover:shadow-xl hover:scale-105 duration-500 transform transition pb-10 mb-10 sm:mb-0 ">
               <Image src={predicter} className="object-cover" />
               <h3 className="text-white text-3xl py-4 text-center">
@@ -158,30 +182,6 @@ export default function Home() {
                   target="_blank"
                   className="bg-gradient-to-r from-orange-500 to-pink-600 text-white px-4 py-1  rounded-xl ml-6 text-xl"
                   href="https://github.com/JoaopBota/StockPredicter"
-                >
-                  Code
-                </a>
-              </div>
-            </div>
-            <div className="shadow-lg shadow-black rounded-2xl overflow-hidden hover:shadow-xl hover:scale-105 duration-500 transform transition pb-10 mb-10 sm:mb-0">
-              <Image src={pointsofinterest} className="object-cover" />
-              <h3 className="text-white text-3xl py-4 text-center">
-                Points of Interest
-              </h3>
-              <p className="text-md mx-8 py-3 leading-8 font-Varela text-zinc-400 text-justify">
-                Allows the user to view nearby points of interest (POIs). The
-                user can create POIs, view them on a map, and store them in the
-                onboard SQLite database as well as download them from a web API
-                and save them to the web
-              </p>
-              <div className="font-bold text-transparent bg-clip-text bg-gradient-to-r from-white to-zinc-400 text-xl py-4 text-center mx-8">
-                <h4>JavaScript MYSQL Express Node</h4>
-              </div>
-              <div className="text-right mt-5 mr-10">
-                <a
-                  target="_blank"
-                  className="bg-gradient-to-r from-orange-500 to-pink-600 text-white px-4 py-1  rounded-xl ml-6 text-xl"
-                  href="https://github.com/JoaopBota/PoisWeb"
                 >
                   Code
                 </a>
