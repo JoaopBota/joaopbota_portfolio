@@ -251,7 +251,7 @@ export default function Home() {
                 OpenStreetMap
               </p>
               <div className="font-bold text-transparent bg-clip-text bg-gradient-to-r from-white to-zinc-400 text-xl py-4 text-center mx-8">
-                <h4 className=" whitespace-normal">JavaScript React Node</h4>
+                <h4 className=" whitespace-normal">Kotlin OSMDROID SQlite</h4>
               </div>
               <div className="text-right mt-5 mr-10">
                 <a
@@ -299,7 +299,7 @@ export default function Home() {
                 restaurants.
               </p>
               <div className="font-bold text-transparent bg-clip-text bg-gradient-to-r from-white to-zinc-400 text-xl py-4 text-center mx-8">
-                <h4>Kotlin OSMDROID SQlite</h4>
+                <h4>JavaScript Aframe.js Ar.js Aframe </h4>
               </div>
               <div className="text-right mt-5 mr-10">
                 <a
