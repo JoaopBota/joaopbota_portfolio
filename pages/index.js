@@ -526,7 +526,7 @@ export default function Home() {
           </a>
         </div>
         <div className="text-center text-zinc-500 font-Varela font-bold text-xl bg-zinc-900">
-          <h1>João Bota ©2022</h1>
+          <h1>©João Bota 2022</h1>
         </div>
       </footer>
     </div>
