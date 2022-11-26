@@ -140,8 +140,9 @@ export default function Home() {
         </section>
 
         <section>
-        <motion.div whileInView={{ x: 0, opacity: 1 }} initial={{ opacity:0, x:-100}} viewport={{once:false, amount:0.50}} transition={{duration:0.35}} >
+        
           <div className="sm:grid md:grid-cols-2 2xl:grid-cols-4 2xl:gap-4 m-8 sm:m-0 sm:mt-10">
+          <motion.div whileInView={{ x: 0, opacity: 1 }} initial={{ opacity:0, x:-100}} viewport={{once:false, amount:0.35}} transition={{duration:0.35}}>
             <div className="shadow-lg shadow-black rounded-2xl overflow-hidden hover:shadow-xl hover:scale-105 duration-500 transform transition pb-10 mb-10 sm:mb-0 ">
               <Image src={snowfall} className="object-cover" />
               <h3 className="text-white text-3xl py-4 text-center">SnowCore</h3>
@@ -164,6 +165,8 @@ export default function Home() {
                 </a>
               </div>
             </div>
+            </motion.div>
+            <motion.div whileInView={{ x: 0, opacity: 1 }} initial={{ opacity:0, x:-100}} viewport={{once:false, amount:0.40}} transition={{duration:0.35}}>
             <div className="shadow-lg shadow-black rounded-2xl overflow-hidden hover:shadow-xl hover:scale-105 duration-500 transform transition pb-10 mb-10 sm:mb-0">
               <Image src={pointsofinterest} className="object-cover" />
               <h3 className="text-white text-3xl py-4 text-center">
@@ -188,6 +191,8 @@ export default function Home() {
                 </a>
               </div>
             </div>
+            </motion.div>
+            <motion.div whileInView={{ x: 0, opacity: 1 }} initial={{ opacity:0, x:-100}} viewport={{once:false, amount:0.40}} transition={{duration:0.35}}>
             <div className="shadow-lg shadow-black rounded-2xl overflow-hidden hover:shadow-xl hover:scale-105 duration-500 transform transition pb-10 mb-10 sm:mb-0 ">
               <Image src={predicter} className="object-cover" />
               <h3 className="text-white text-3xl py-4 text-center">
@@ -214,6 +219,8 @@ export default function Home() {
                 </a>
               </div>
             </div>
+            </motion.div>
+            <motion.div whileInView={{ x: 0, opacity: 1 }} initial={{ opacity:0, x:-100}} viewport={{once:false, amount:0.40}} transition={{duration:0.35}}>
             <div className="shadow-lg shadow-black rounded-2xl overflow-hidden hover:shadow-xl hover:scale-105 duration-500 transform transition pb-10 mb-10 sm:mb-0">
               <Image src={animalrescue} className="object-cover" />
               <h3 className="text-white text-3xl py-4 text-center">
@@ -238,13 +245,15 @@ export default function Home() {
                 </a>
               </div>
             </div>
+            </motion.div>
           </div>
-          </motion.div>
+          
         </section>
 
         <section>
-        <motion.div whileInView={{ x: 0, opacity: 1 }} initial={{ opacity:0, x:-100}} viewport={{once:false, amount:0.50}} transition={{duration:0.35}}>
+        
           <div className="sm:grid md:grid-cols-2 2xl:grid-cols-4 2xl:gap-4 m-8 sm:m-0 sm:mt-10">
+          <motion.div whileInView={{ x: 0, opacity: 1 }} initial={{ opacity:0, x:-100}} viewport={{once:false, amount:0.40}} transition={{duration:0.35}}>
             <div className="shadow-lg shadow-black rounded-2xl overflow-hidden hover:shadow-xl hover:scale-105 duration-500 transform transition pb-10 mb-10 sm:mb-0 ">
               <Image src={ChatBotAI} className="object-cover" />
               <h3 className="text-white text-3xl py-4 text-center">
@@ -268,6 +277,8 @@ export default function Home() {
                 </a>
               </div>
             </div>
+            </motion.div>
+            <motion.div whileInView={{ x: 0, opacity: 1 }} initial={{ opacity:0, x:-100}} viewport={{once:false, amount:0.40}} transition={{duration:0.35}}>
             <div className="shadow-lg shadow-black rounded-2xl overflow-hidden hover:shadow-xl hover:scale-105 duration-500 transform transition pb-10 mb-10 sm:mb-0 ">
               <Image src={MobileAPP} className="object-cover" />
               <h3 className="text-white text-3xl py-4 text-center">
@@ -292,6 +303,8 @@ export default function Home() {
                 </a>
               </div>
             </div>
+            </motion.div>
+            <motion.div whileInView={{ x: 0, opacity: 1 }} initial={{ opacity:0, x:-100}} viewport={{once:false, amount:0.40}} transition={{duration:0.35}}>
             <div className="shadow-lg shadow-black rounded-2xl overflow-hidden hover:shadow-xl hover:scale-105 duration-500 transform transition pb-10 mb-10 sm:mb-0">
               <Image src={StormAdviceCenter} className="object-cover" />
               <h3 className="text-white text-3xl py-4 text-center">
@@ -316,6 +329,8 @@ export default function Home() {
                 </a>
               </div>
             </div>
+            </motion.div>
+            <motion.div whileInView={{ x: 0, opacity: 1 }} initial={{ opacity:0, x:-100}} viewport={{once:false, amount:0.40}} transition={{duration:0.35}}>
             <div className="shadow-lg shadow-black rounded-2xl overflow-hidden hover:shadow-xl hover:scale-105 duration-500 transform transition pb-10 mb-10 sm:mb-0">
               <Image src={Immersive} className="object-cover" />
               <h3 className="text-white text-3xl py-4 text-center">
@@ -340,8 +355,9 @@ export default function Home() {
                 </a>
               </div>
             </div>
+            </motion.div>
           </div>
-          </motion.div>
+          
         </section>
 
         <section>
@@ -366,8 +382,9 @@ export default function Home() {
         </section>
 
         <section>
-        <motion.div whileInView={{ x: 0, opacity: 1 }} initial={{ opacity:0, x:-100}} viewport={{once:false, amount:0.40}} transition={{duration:0.35}}>
+        
           <div className="sm:bg-origins bg-cover pb-10">
+          <motion.div  whileInView={{ x: 0, opacity: 1 }} initial={{ opacity:0, x:-100}} viewport={{once:false, amount:0.30}} transition={{duration:0.35}}>
             <div className="sm:flex">
               <div className="sm:my-16 p-8 text-right">
                 <h4 className="text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-pink-600 text-6xl">
@@ -415,6 +432,8 @@ export default function Home() {
                 </div>
               </div>
             </div>
+            </motion.div>
+            <motion.div  whileInView={{ x: 0, opacity: 1 }} initial={{ opacity:0, x:-100}} viewport={{once:false, amount:0.30}} transition={{duration:0.35}}>
             <div className="sm:flex justify-end mt-14">
               <div className="sm:my-16 p-8 text-right">
                 <h4 className="text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-pink-600 text-6xl">
@@ -448,8 +467,9 @@ export default function Home() {
                 </div>
               </div>
             </div>
+            </motion.div>
           </div>
-          </motion.div>
+          
         </section>
       </main>
       <footer>
