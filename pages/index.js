@@ -27,8 +27,28 @@ import { SiMongodb } from "react-icons/si";
 import { GrMysql } from "react-icons/gr";
 import { SiSpringboot } from "react-icons/si";
 import { motion } from "framer-motion";
+import { ToastContainer, toast} from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 
 export default function Home() {
+  async function handleOnSubmit(e) {
+    e.preventDefault();
+    const formData = {};
+ 
+    Array.from(e.currentTarget.elements).forEach((field) => {
+      if (!field.name) return;
+      formData[field.name] = field.value;
+    });
+    fetch("/api/mail", {
+      method: "post",
+      body: JSON.stringify(formData),
+    });
+    toast("Message was sent successfully!")
+    nameInput.value= '';
+    emailInput.value= '';
+    textInput.value= '';
+  }
   return (
     <div>
       <Head>
@@ -515,6 +535,69 @@ export default function Home() {
             </motion.div>
           </div>
         </section>
+        <section>
+          <div className="p-10">
+            <h3 className="2xl:w-1/4 text-5xl sm:text-7xl text-transparent bg-clip-text bg-gradient-to-r from-slate-50 to-zinc-600 py-4 ">
+              Contact
+            </h3>
+            <p className="mb-8 lg:mb-16 sm:text-xl p-6 text-zinc-400">
+            Feel free to <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-pink-600">reach out</span>  for any question!
+            </p>
+            <div id="box_form" className="py-8 lg:py-8 px-4 mx-auto max-w-screen-md shadow-2xl shadow-black rounded-xl">
+            <ToastContainer />
+            <form method="post" onSubmit={handleOnSubmit} class="space-y-8">
+              <p>
+                <label
+                  htmlFor="name"
+                  className="block mb-2 text-md sm:text-xl text-white"
+                >
+                  Name
+                </label>
+                <input
+                  required
+                  id="nameInput"
+                  type="text"
+                  name="name"
+                  className="block p-3 w-full text-md sm:text-xl text-white rounded-lg border shadow-sm focus:ring-primary-500 focus:border-primary-500 bg-zinc-700 border-zinc-600 placeholder-zinc-400  focus:ring-primary-500 focus:border-primary-500 shadow-sm-light"
+                />
+              </p>
+              <p>
+                <label
+                  htmlFor="email"
+                  className="block mb-2 text-md sm:text-xl text-white"
+                >
+                  Email
+                </label>
+                <input
+                  required
+                  id="emailInput"
+                  type="email"
+                  name="email"
+                  className="block p-3 w-full text-md sm:text-xl text-white rounded-lg border shadow-sm focus:ring-primary-500 focus:border-primary-500 bg-zinc-700 border-zinc-600 placeholder-zinc-400  focus:ring-primary-500 focus:border-primary-500 shadow-sm-light"
+                />
+              </p>
+              <p>
+                <label
+                  required
+                  htmlFor="message"
+                  className="block mb-2 text-md sm:text-xl text-white"
+                >
+                  Message
+                </label>
+                <textarea
+                  required
+                  id="textInput"
+                  name="message"
+                  className="block p-3 w-full text-md sm:text-xl text-white rounded-lg border shadow-sm focus:ring-primary-500 focus:border-primary-500 bg-zinc-700 border-zinc-600 placeholder-zinc-400  focus:ring-primary-500 focus:border-primary-500 shadow-sm-light"
+                ></textarea>
+              </p>
+              <p className="text-right">
+                <button className="bg-gradient-to-r from-orange-500 to-pink-600 text-white sm:mr-0 px-4 py-1 rounded-xl ml-6 mt-5">Submit</button>
+              </p>
+            </form>
+            </div>
+          </div>
+        </section>
       </main>
       <footer>
         <div className="text-3xl flex justify-center gap-2 text-white bg-zinc-900 pt-5 pb-2">
@@ -530,5 +613,6 @@ export default function Home() {
         </div>
       </footer>
     </div>
+    
   );
 }
