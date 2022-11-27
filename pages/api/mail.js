@@ -11,15 +11,13 @@ export default async (req, res) => {
     Message: ${body.message}
   `;
 
-  const data = {
+  await mail.send ({
     to: 'soaresbota@gmail.com',
     from: 'contact@joaopbota.com',
     subject: 'New Contact Request',
     text: message,
     html: message.replace(/\r\n/g, '<br>')
-  };
-
-  mail.send(data)
+  });
 
   res.status(200).json({ status: 'Ok' })
 }
