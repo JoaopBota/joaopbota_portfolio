@@ -277,7 +277,7 @@ export default function Home() {
                   <a
                     target="_blank"
                     className="bg-gradient-to-r from-orange-500 to-pink-600 text-white px-4 py-1  rounded-xl ml-6 text-xl"
-                    href="https://github.com/JoaopBota/ChatBot_w-AI"
+                    href="https://github.com/JoaopBota/AnimalRescue"
                   >
                     Code
                   </a>
