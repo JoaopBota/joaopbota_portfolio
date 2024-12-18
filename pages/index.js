@@ -152,7 +152,7 @@ export default function Home() {
             </div>
           </section>
         </section>
-
+        
 
         <section>
           <div className="grid gap-10 m-8 sm:m-0 sm:mt-10">
@@ -163,15 +163,14 @@ export default function Home() {
               transition={{ duration: 0.35 }}
               className="shadow-lg shadow-black rounded-2xl overflow-hidden hover:shadow-xl hover:scale-105 duration-500 transform transition pb-10 mb-10 sm:mb-0"
             >
-              <Image src={snowfall} className="object-cover" />
+              <div className="relative h-64 w-full">
+                <Image src={snowfall} layout="fill" objectFit="cover" className="rounded-t-2xl" />
+              </div>
               <h3 className="text-white text-3xl py-4 text-center">
                 SnowCore
               </h3>
               <p className="text-md mx-8 py-3 leading-8 font-Varela text-zinc-400 text-justify">
-                Progressive Web Application (PWA) which allows users to see
-                the location, forecast for snowfall in five days, the current
-                weather, snow size, and the website that gathers the snowfall
-                data of each ski resort
+                A Progressive Web Application that aggregates real-time snowfall data from multiple ski resorts. Features include location-based forecasts, weather updates, and snow size visualization for enhanced user experience.
               </p>
             </motion.div>
             <motion.div
@@ -181,15 +180,14 @@ export default function Home() {
               transition={{ duration: 0.35 }}
               className="shadow-lg shadow-black rounded-2xl overflow-hidden hover:shadow-xl hover:scale-105 duration-500 transform transition pb-10 mb-10 sm:mb-0"
             >
-              <Image src={pointsofinterest} className="object-cover" />
+              <div className="relative h-64 w-full">
+                <Image src={pointsofinterest} layout="fill" objectFit="cover" className="rounded-t-2xl" />
+              </div>
               <h3 className="text-white text-3xl py-4 text-center">
                 Points of Interest
               </h3>
               <p className="text-md mx-8 py-3 leading-8 font-Varela text-zinc-400 text-justify">
-                Allows the user to view nearby points of interest (POIs). The
-                user can create POIs, view them on a map, and store them in
-                the onboard SQLite database as well as download them from a
-                web API and save them to the web
+                A web application providing users with the ability to map, manage, and store points of interest. Features integration with external APIs for data enrichment and a user-friendly interface for navigation.
               </p>
             </motion.div>
             <motion.div
@@ -199,15 +197,14 @@ export default function Home() {
               transition={{ duration: 0.35 }}
               className="shadow-lg shadow-black rounded-2xl overflow-hidden hover:shadow-xl hover:scale-105 duration-500 transform transition pb-10 mb-10 sm:mb-0"
             >
-              <Image src={animalrescue} className="object-cover" />
+              <div className="relative h-64 w-full">
+                <Image src={animalrescue} layout="fill" objectFit="cover" className="rounded-t-2xl" />
+              </div>
               <h3 className="text-white text-3xl py-4 text-center">
                 Animal Rescue
               </h3>
               <p className="text-md mx-8 py-3 leading-8 font-Varela text-zinc-400 text-justify">
-                Proof-of-concept data-driven full-stack web application that
-                helps find lost dogs or adopt one. Animal Rescue enables a
-                user to add a post with some information such as Dog’s name,
-                breed, location, and phone number
+                A data-driven full-stack application designed to help users locate lost pets or find animals for adoption. It features post creation with details like name, breed, and location.
               </p>
             </motion.div>
             <motion.div
@@ -217,17 +214,32 @@ export default function Home() {
               transition={{ duration: 0.35 }}
               className="shadow-lg shadow-black rounded-2xl overflow-hidden hover:shadow-xl hover:scale-105 duration-500 transform transition pb-10 mb-10 sm:mb-0"
             >
-              <Image src={ChatBotAI} className="object-cover" />
+              <div className="relative h-64 w-full">
+                <Image src={ChatBotAI} layout="fill" objectFit="cover" className="rounded-t-2xl" />
+              </div>
               <h3 className="text-white text-3xl py-4 text-center">
                 ChatBotAI
               </h3>
               <p className="text-md mx-8 py-3 leading-8 font-Varela text-zinc-400 text-justify">
-                The project is capable of communicating similarly to a human,
-                It answers many questions related to a restaurant
-                establishment. The main use is in customer interaction in a
-                business.
+                An intelligent chatbot prototype offering human-like interactions. Designed for customer service, it provides relevant answers and improves user engagement through AI-driven responses.
               </p>
             </motion.div>
+          </div>
+        </section>
+
+        <section>
+          <div className="p-10">
+            <div className="text-zinc-400 ">
+              <h3 className="2xl:w-1/4 text-5xl sm:text-7xl text-transparent bg-clip-text bg-gradient-to-r from-slate-50 to-zinc-600 py-4 ">
+                Skills
+              </h3>
+              <p className="sm:text-xl p-6">
+                Leveraging a wide array of technologies for software solutions: <br />
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-pink-600">
+                  C#, JavaScript, Azure, RESTful APIs, MES solutions, and Data Visualization Tools.
+                </span>
+              </p>
+            </div>
           </div>
         </section>
 
