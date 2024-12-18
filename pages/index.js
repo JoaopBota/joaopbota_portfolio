@@ -51,7 +51,7 @@ export default function Home() {
   }
   return (
     <div>
-      <Head>
+       <Head>
         <title>João Bota Portfolio</title>
         <meta name="description" content="Joao Bota Portfolio" />
         <link rel="icon" href="/favicon.ico" />
@@ -130,14 +130,11 @@ export default function Home() {
                     João Bota
                   </h2>
                   <h3 className="mx-auto text-4xl py-2 font-Varela text-transparent bg-clip-text bg-gradient-to-r from-white to-zinc-600 xl:text-center 2xl:w-1/4">
-                    Developer
+                    Software Engineer
                   </h3>
                 </div>
                 <p className="text-md py-3 leading-8 font-Varela text-zinc-400 xl:w-2/4 lg:text-center lg:mx-auto text-left">
-                  Software Engineer capable of developing efficient scalable
-                  full-stack web-based applications, along with critical and
-                  problem-solving skills for design and construction of software
-                  and work collaboratively on software development.
+                  Experienced in creating MES solutions, enhancing manufacturing efficiency, and enabling real-time insights. Skilled in developing scalable applications with expertise in C#, JavaScript, Azure, and RESTful APIs.
                 </p>
               </div>
             </motion.div>
@@ -146,11 +143,11 @@ export default function Home() {
                 Projects
               </h3>
               <p className="sm:text-xl p-6">
-                Since the beggining of my journey as a{" "}
+                Since the beginning of my journey as a{" "}
                 <span className="  text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-pink-600">
                   Software Engineer
                 </span>
-                , I've done many projects both for business and consumer use.
+                , I've undertaken numerous impactful projects in manufacturing, academic research, and consumer-facing applications.
               </p>
             </div>
           </section>
@@ -609,7 +606,7 @@ export default function Home() {
           </a>
         </div>
         <div className="text-center text-zinc-500 font-Varela font-bold text-xl bg-zinc-900">
-          <h1>©João Bota 2022</h1>
+          <h1>©João Bota 2024</h1>
         </div>
       </footer>
     </div>
